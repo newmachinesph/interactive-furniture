@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #aa323e;
+  --primary-dark: #8f2a34;
+  --secondary: #bbb6b3;
+  --secondary-dark: #a8a4a1;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, monospace;
+  --font-display: var(--font-aboreto), serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #aa323e;
+}
